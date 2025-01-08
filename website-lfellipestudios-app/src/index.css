@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'heading-now-74-regular';
+    src: url(./assets/fonts/HeadingNow-74Regular.otf);
+}
+@font-face {
+    font-family: 'heading-now-74-regular-italic';
+    src: url(./assets/fonts/HeadingNow-74RegularItalic.otf);
+}
+@font-face {
+    font-family: 'heading-now-86-bold';
+    src: url(./assets/fonts/HeadingNow-86Bold.otf);
+}
+@font-face {
+    font-family: 'heading-now-86-bold-italic';
+    src: url(./assets/fonts/HeadingNow-86BoldItalic.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'heading-now-74-regular', sans-serif;
+}
+body{
+    background: #000000;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+
+h1{
+    font-family: 'heading-now-86-bold-italic';
+}
+
+.container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.default-small-button{
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.5s, fill 0.2s, stroke 0.2s;
+}
+.default-small-button:hover{
+  background: white;
+  color: black;
+  box-shadow: 0px 0px 0px 4px white;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, fill 0.2s, stroke 0.2s;
+}
+
+.default-small-button:active{
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px 1px white;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.default-button{
+  font-family: 'heading-now-86-bold';
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 5px solid rgba(0, 0, 0, 0.0);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+.default-button:hover {
+    box-shadow: 0px 0px 0px 4px white;
+    transition: box-shadow 0.2s;
+}
+
+.default-button:active{
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px 1px white;
+    transition: transform 0.1s, box-shadow 0.1s;
+  }
+
