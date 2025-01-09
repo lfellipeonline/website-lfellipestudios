@@ -26,8 +26,10 @@ const PortifolioComponent = () => {
   
   return (
     <div className="portifolio">
-        <img src={backbutton} alt="backbutton" className='back-button' onClick={slideBackward} />
-        <img src={forwardbutton} alt="forwardbutton" className='forward-button' onClick={slideForward}/>
+
+        <button className='back-button' onClick={slideBackward}>◄</button>
+        <button className='forward-button' onClick={slideForward}>►</button>
+        
         <div className="slider">
           <ul ref={slider}>
             <li>
