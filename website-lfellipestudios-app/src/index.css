@@ -131,7 +131,10 @@ h3{
         transparent,
         rgb(0, 0, 0) 95%
       ),
-    url(./assets/portifolioimage.jpg);
-    background-size: cover;
+    url(./assets/aboutimage.jpg);
+    
 }
+
+
+
 
