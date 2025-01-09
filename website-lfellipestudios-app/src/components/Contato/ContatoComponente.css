@@ -1,0 +1,63 @@
+.contato{
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.contato-coluna{
+    flex-basis: 48%;
+}
+
+.contato-coluna h3{
+    color: gray;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contato-coluna h3 img{
+    width: 35px;
+    margin-left: 10px;
+}
+
+.contato-coluna p{
+    max-width: 450px;
+    line-height: 1.1;
+}
+
+.contato-coluna ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;  
+}
+
+.contato-coluna ul li img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.contato form input, .contato form textarea{
+    display: block;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+    color: black;
+    border-radius: 10px;
+}
+
+.contato-coluna span{
+    display: block;
+    margin: 20px 0;
+}
+.contato-coluna span i{
+    color: gray;
+}

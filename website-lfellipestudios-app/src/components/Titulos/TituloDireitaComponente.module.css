@@ -1,0 +1,11 @@
+.tituloBase{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    line-height: 1;
+    padding-top: 80px;
+
+}
+
+.tituloBase h1{
+    font-size: 60px;
+}

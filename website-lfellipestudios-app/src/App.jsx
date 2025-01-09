@@ -4,6 +4,9 @@ import StartComponent from './components/Start/StartComponent'
 import SobreComponent from './components/Sobre/SobreComponent'
 import PortifolioComponent from './components/Portifolio/PortifolioComponent'
 import TituloComponente from './components/Titulos/TituloComponente'
+import TituloDireitaComponente from './components/Titulos/TituloDireitaComponente'
+import ContatoComponente from './components/Contato/ContatoComponente'
+import FooterComponente from './components/Footer/FooterComponente'
 
 const App = () => {
 
@@ -15,6 +18,9 @@ const App = () => {
         <div className="container portifolio-container">
           <TituloComponente titulo="Portifólio" texto="Descubra meus projetos mais recentes" />
           <PortifolioComponent />
+          <TituloComponente titulo="Contato" texto="Minhas Redes Sociais"/>
+          <ContatoComponente />
+          <FooterComponente />
       </div>
     </div>
   )

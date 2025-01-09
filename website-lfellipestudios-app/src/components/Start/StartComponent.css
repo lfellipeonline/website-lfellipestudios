@@ -26,3 +26,8 @@
     margin: 10px auto 20px;
     line-height: 1;
 }
+
+.start-text button h1{
+    font-family: 'heading-now-86-bold';
+    font-size: 25px;
+}
