@@ -33,7 +33,7 @@ const PortifolioComponent = () => {
               <div className="slide">
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
-                  <div><h3>Titulo do Projeto</h3>
+                  <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto</span> 
                   </div>
                 </div>
@@ -44,7 +44,7 @@ const PortifolioComponent = () => {
               <div className="slide">
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
-                  <div><h3>Titulo do Projeto</h3>
+                  <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto </span> 
                   </div>
                 </div>
@@ -55,7 +55,7 @@ const PortifolioComponent = () => {
               <div className="slide">
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
-                  <div><h3>Titulo do Projeto</h3>
+                  <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto</span> 
                   </div>
                 </div>
@@ -66,7 +66,7 @@ const PortifolioComponent = () => {
               <div className="slide">
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
-                  <div><h3>Titulo do Projeto</h3>
+                  <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto</span> 
                   </div>
                 </div>
@@ -77,7 +77,7 @@ const PortifolioComponent = () => {
               <div className="slide">
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
-                  <div><h3>Titulo do Projeto</h3>
+                  <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto</span> 
                   </div>
                 </div>
@@ -88,7 +88,7 @@ const PortifolioComponent = () => {
               <div className="slide">
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
-                  <div><h3>Titulo do Projeto</h3>
+                  <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto</span> 
                   </div>
                 </div>

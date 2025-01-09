@@ -124,7 +124,7 @@ h3{
 .portifolio-container{
     background-image: linear-gradient(
         transparent,
-        black 95%
+        rgb(0, 0, 0) 95%
       ),
       linear-gradient(
           to top,
@@ -132,8 +132,33 @@ h3{
         rgb(0, 0, 0) 95%
       ),
     url(./assets/aboutimage.jpg);
-    
 }
+
+.contato-container{
+    background-image: linear-gradient(
+        transparent,
+        rgb(0, 0, 0) 95%
+      ),
+      linear-gradient(
+          to top,
+        transparent,
+        rgb(0, 0, 0) 95%
+      ),
+    url(./assets/aboutimage.jpg);
+}
+
+/* Responsividade Mobile */
+
+@media (max-width: 1200px){
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .default-button{
+        padding: 14px 22px;
+    }
+}
+
 
 
 

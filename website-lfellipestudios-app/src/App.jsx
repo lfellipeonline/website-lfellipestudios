@@ -18,10 +18,12 @@ const App = () => {
         <div className="container portifolio-container">
           <TituloComponente titulo="Portifólio" texto="Descubra meus projetos mais recentes" />
           <PortifolioComponent />
-          <TituloComponente titulo="Contato" texto="Minhas Redes Sociais"/>
-          <ContatoComponente />
-          <FooterComponente />
-      </div>
+        </div>
+          <div className="container contato-container">
+            <TituloComponente titulo="Contato" texto="Minhas Redes Sociais"/>
+            <ContatoComponente />
+            <FooterComponente />
+          </div>
     </div>
   )
 }

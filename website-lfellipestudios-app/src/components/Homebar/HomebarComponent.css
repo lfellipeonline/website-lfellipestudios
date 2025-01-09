@@ -55,5 +55,20 @@ nav ul li{
     transition: 0.3s;
 }
 
+/* Responsividade Mobile */
+
+@media (max-width: 1030px){
+    .logo{
+        width: 270px;
+    }
+
+    .nav-list li{
+        margin: 10 15px;
+        font-size: 14px;
+    }
+}
+
+
+
 
 

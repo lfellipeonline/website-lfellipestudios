@@ -19,6 +19,10 @@
     margin-bottom: 20px;
 }
 
+.contato-coluna h1{
+    font-size: 15px;
+}
+
 .contato-coluna h3 img{
     width: 35px;
     margin-left: 10px;

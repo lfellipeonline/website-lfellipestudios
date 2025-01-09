@@ -4,6 +4,7 @@ import contatoimage from "../../assets/contatoimage.png";
 import instagramimage from "../../assets/instagramicon.png";
 import linkedinimage from "../../assets/linkedinicon.png";
 import gmailimage from "../../assets/gmailicon.png";
+import loading from "../../assets/loadingicon.gif";
 
 const ContatoComponente = () => {
   
@@ -11,10 +12,10 @@ const ContatoComponente = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Enviando... (AGUARDANDO RESPOSTA DO SERVIDOR)");
+    setResult("<h1>Enviando...</h1> Aguardando resposta do servidor...");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "15d9a11c-1005-49d3-907b-6424c6e494d3");
+    // formData.append("access_key", "15d9a11c-1005-49d3-907b-6424c6e494d3");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -57,7 +58,7 @@ const ContatoComponente = () => {
                 <textarea name="message" rows="6" placeholder='Escreva sua mensagem'></textarea>
                 <button type='submit' className='default-white-button'>Enviar</button>
             </form>
-            <span><i>{result}</i></span>
+            <span dangerouslySetInnerHTML={{ __html: result }}></span>
         </div>
     </div>
   )
