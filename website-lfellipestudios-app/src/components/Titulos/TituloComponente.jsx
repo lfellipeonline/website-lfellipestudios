@@ -1,12 +1,12 @@
 import React from 'react';
-import './TituloComponente.css';
+import styles from './TituloComponente.module.css';
 
-function TituloComponente({ titulo, texto }) {
+function TituloComponente(props) {
   return (
-    <main className='texto'>
-      <h1>{titulo}</h1>
-      <p>{texto}</p>
-    </main>
+    <div className={styles.tituloBase}>
+      <h1>{props.titulo}</h1>
+      <span>{props.texto}</span>
+    </div>
   );
 }
 

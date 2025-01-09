@@ -35,6 +35,14 @@ h1{
     font-family: 'heading-now-86-bold-italic';
 }
 
+span{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+h3{
+    font-family: 'heading-now-74-regular-italic';
+}
+
 .container{
     padding-left: 5%;
     padding-right: 5%;
@@ -87,5 +95,29 @@ h1{
     transform: translateY(3px);
     box-shadow: 0px 0px 0px 1px white;
     transition: transform 0.1s, box-shadow 0.1s;
-  }
+}
+
+.default-white-button{
+  font-family: 'heading-now-86-bold';
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 1);
+  border: 5px solid rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+
+.default-white-button:hover {
+    box-shadow: 0px 0px 0px 4px white;
+    transition: box-shadow 0.2s;
+}
+
+.default-white-button:active{
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px 1px white;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
 

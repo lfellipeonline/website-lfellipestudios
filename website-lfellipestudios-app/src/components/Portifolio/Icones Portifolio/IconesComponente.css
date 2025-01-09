@@ -1,0 +1,11 @@
+.slider{
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider ul{
+    padding: 10px;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
