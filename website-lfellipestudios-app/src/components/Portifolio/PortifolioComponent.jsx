@@ -1,7 +1,5 @@
 import React, { useRef } from 'react'
 import './PortifolioComponent.css'
-import backbutton from '../../assets/backbutton.png'
-import forwardbutton from '../../assets/forwardbutton.png'
 import noicon from "../../assets/portifolionoimage.png";
 
 const PortifolioComponent = () => {
@@ -14,7 +12,6 @@ const PortifolioComponent = () => {
         transformX -=16.1
       }
       slider.current.style.transform = `translateX(${transformX}%)`
-      
     }
 
     const slideBackward = () => {

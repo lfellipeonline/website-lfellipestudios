@@ -121,3 +121,17 @@ h3{
     transition: transform 0.1s, box-shadow 0.1s;
 }
 
+.portifolio-container{
+    background-image: linear-gradient(
+        transparent,
+        black 95%
+      ),
+      linear-gradient(
+          to top,
+        transparent,
+        rgb(0, 0, 0) 95%
+      ),
+    url(./assets/portifolioimage.jpg);
+    background-size: cover;
+}
+

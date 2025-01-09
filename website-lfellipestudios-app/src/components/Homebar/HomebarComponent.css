@@ -51,6 +51,7 @@ nav ul li{
 
 .homebar-shadow{
     background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(30px);
     transition: 0.3s;
 }
 

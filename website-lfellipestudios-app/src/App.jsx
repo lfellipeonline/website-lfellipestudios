@@ -11,7 +11,7 @@ const App = () => {
       <HomebarComponent />
       <StartComponent />
       <SobreComponent/>
-      <div className="container">
+      <div className="container portifolio-container">
         <TituloComponente titulo="Portifólio" texto="Descubra meus mais diversos projetos." />
       <PortifolioComponent />
       </div>

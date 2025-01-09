@@ -10,11 +10,12 @@ p{
     margin: 80px auto;
     padding: 0 80px;
     position: relative;
+    margin: auto;
 }
 
 .forward-button, .back-button{
     position: absolute;
-    top: 50%;
+    top: 30%;
     color: black;
     right: 0;
     transform: translateY(-60%);
@@ -27,7 +28,7 @@ p{
     border-radius: 15px;
     padding: 10px 10px;
     transition: 0.5s;
-    
+    display: block;
 }
 
 .forward-button:hover, .back-button:hover{
