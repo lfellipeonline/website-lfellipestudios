@@ -3,7 +3,7 @@ import HomebarComponent from '../components/Homebar/HomebarComponent'
 import PortifolioPageComponent from '../components/Portifolio-Page/PortifolioPageComponent'
 import TituloDireitaComponente from '../components/Titulos/TituloDireitaComponente'
 import TituloComponente from '../components/Titulos/TituloComponente'
-import './portifoliopage.css'
+import './PortifolioPage.css'
 import FooterComponente from '../components/Footer/FooterComponente'
 
 const PortifolioPage = () => {
