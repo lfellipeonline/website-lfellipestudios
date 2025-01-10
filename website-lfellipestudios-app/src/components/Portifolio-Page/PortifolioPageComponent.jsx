@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import './PortifolioPageComponent.Module.css'
+import './PortifolioPageComponent.module.css'
 import noicon from "../../assets/portifolionoimage.png";
 
 const PortifolioPageComponent = () => {
