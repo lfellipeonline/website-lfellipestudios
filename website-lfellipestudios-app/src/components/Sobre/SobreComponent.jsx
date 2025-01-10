@@ -17,8 +17,8 @@ const SobreComponent = () => {
       <div className="sobre-int">
         <div className="texto">
           <h1>Sobre Mim</h1>
-          <p>Sou estudante de Tecnologia da Informação, à procura de de estágio para aplicar meus conhecimentos. Tenho habilidades em Design Thinking e um grande interesse em contribuir de forma significativa para o crescimento e inovação da empresa, colaborando para o desenvolvimento de soluções eficazes e criativas.</p>
-          <p>Além disso, possuo anos de experiência com produção audiovisual, trabalhando com ferramentas renomadas como Adobe Photoshop e Adobe Premiere Pro, o que me permite integrar design visual e narrativas criativas aos projetos em que atuo. Essa expertise combina habilidades técnicas e artísticas, agregando valor em projetos que demandam versatilidade e excelência. <br /> <br /> &lt; <i>Texto Provisório</i> &gt;</p>       
+          <p>Sou estudante de Tecnologia da Informação e estou em busca de uma oportunidade de estágio para aplicar meus conhecimentos e contribuir com soluções criativas e inovadoras. Tenho habilidades em Design Thinking, que me permitem desenvolver projetos eficazes e centrados nas necessidades dos usuários, agregando valor ao crescimento da empresa.</p>
+          <p><br />Além disso, possuo experiência em produção audiovisual, trabalhando com ferramentas renomadas como Adobe Photoshop e Premiere Pro. Essa combinação de habilidades técnicas e criativas me capacita a integrar design visual e narrativas envolventes aos projetos, entregando resultados de alta qualidade e impacto. <br /> <br /> &lt; <i>Texto Provisório</i> &gt;</p>       
         </div>
       </div>
       <div className="img-container">

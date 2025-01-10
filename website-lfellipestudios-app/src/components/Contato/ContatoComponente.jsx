@@ -7,6 +7,7 @@ import gmailimage from "../../assets/gmailicon.png";
 import loading from "../../assets/loadingicon.gif";
 
 const ContatoComponente = () => {
+  const onChange = () => {}
   
     const [result, setResult] = React.useState("");
 
@@ -33,12 +34,14 @@ const ContatoComponente = () => {
     }
   };
 
+    
+
     return (
     <div className="contato">
         <div className="contato-coluna">
             <h3>Meus Contatos<img src={contatoimage} alt="contatoimage" /></h3>
             <p>
-            Sinta-se à vontade para entrar em contato através do formulário ou acessar minhas informações de contato abaixo.
+            Fique à vontade para entrar em contato por meio do formulário ou utilizando as informações abaixo.
             </p>
             <ul>
                 <li><img src={gmailimage} alt="gmailimage" /><a href="https://criarmeulink.com.br/u/1736439014">mail.lfellipe@gmail.com</a></li>

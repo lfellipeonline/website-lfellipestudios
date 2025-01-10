@@ -37,7 +37,6 @@ const PortifolioComponent = () => {
                        <span>Subtitulo do Projeto</span> 
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
               </div>
             </li>
             <li>
@@ -48,7 +47,6 @@ const PortifolioComponent = () => {
                        <span>Subtitulo do Projeto </span> 
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
               </div>
             </li>
             <li>
@@ -59,7 +57,6 @@ const PortifolioComponent = () => {
                        <span>Subtitulo do Projeto</span> 
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
               </div>
             </li>
             <li>
@@ -70,7 +67,6 @@ const PortifolioComponent = () => {
                        <span>Subtitulo do Projeto</span> 
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
               </div>
             </li>
             <li>
@@ -81,7 +77,6 @@ const PortifolioComponent = () => {
                        <span>Subtitulo do Projeto</span> 
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
               </div>
             </li>
             <li>
@@ -92,7 +87,6 @@ const PortifolioComponent = () => {
                        <span>Subtitulo do Projeto</span> 
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
               </div>
             </li>
           </ul>

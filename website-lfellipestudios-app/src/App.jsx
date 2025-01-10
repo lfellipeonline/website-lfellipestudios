@@ -21,7 +21,7 @@ const App = () => {
           <PortifolioComponent />
         </div>
           <div className="container contato-container">
-            <TituloComponente titulo="Contato" texto="Minhas Redes Sociais"/>
+            <TituloComponente titulo="Contato" texto="Vamos Conversar"/>
             <ContatoComponente />
             <FooterComponente />
           </div>
