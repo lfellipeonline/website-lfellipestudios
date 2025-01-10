@@ -5,13 +5,14 @@ import TituloDireitaComponente from '../components/Titulos/TituloDireitaComponen
 import TituloComponente from '../components/Titulos/TituloComponente'
 import './PortifolioPage.css'
 import FooterComponente from '../components/Footer/FooterComponente'
+import HomebarPortifolioComponent from '../components/Portifolio/Homebar Portifolio/HomebarPortifolioComponent'
 
 const PortifolioPage = () => {
   return (
     <div>
         <div className="container portifolio-page-container">
         <div className="portifolio-alert"><span>Página em construção <br />Design subjetivo a mudanças</span></div>
-        <HomebarComponent />
+        <HomebarPortifolioComponent />
         <TituloComponente titulo="Projetos Recentes" texto="Descubra meus projetos mais recentes." />
         <PortifolioPageComponent />
         <TituloComponente titulo="Projetos UNINASSAU" texto="Meus Projetos da UNINASSAU." />
