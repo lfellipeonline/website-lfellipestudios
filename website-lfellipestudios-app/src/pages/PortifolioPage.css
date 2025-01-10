@@ -1,0 +1,19 @@
+.portifolio-page-container{
+    margin: 80px auto;
+    background-image: linear-gradient(
+        transparent,
+        rgb(0, 0, 0) 95%
+      ),
+      linear-gradient(
+          to top,
+        transparent,
+        rgb(0, 0, 0) 95%
+      ),
+    url('../assets/aboutimage.jpg');
+}
+.portifolio-alert span{
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+}

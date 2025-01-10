@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
-import './PortifolioComponent.css'
+import './PortifolioPageComponent.css'
 import noicon from "../../assets/portifolionoimage.png";
 
-const PortifolioComponent = () => {
+const PortifolioPageComponent = () => {
 
     const slider = useRef()
     let transformX = 0
@@ -96,10 +96,9 @@ const PortifolioComponent = () => {
               </div>
             </li>
           </ul>
-          <button className='default-white-button more-button'><a href="/portifolio">Ver Mais</a></button>
         </div>
     </div>
   )
 }
 
-export default PortifolioComponent
+export default PortifolioPageComponent

@@ -8,6 +8,7 @@ import TituloDireitaComponente from './components/Titulos/TituloDireitaComponent
 import ContatoComponente from './components/Contato/ContatoComponente'
 import FooterComponente from './components/Footer/FooterComponente'
 
+
 const App = () => {
 
   return (

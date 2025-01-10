@@ -15,7 +15,7 @@ p{
 
 .forward-button, .back-button{
     position: absolute;
-    top: 30%;
+    top: 36%;
     color: black;
     right: 0;
     transform: translateY(-60%);
