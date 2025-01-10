@@ -15,7 +15,7 @@ const ContatoComponente = () => {
     setResult("<h1>Enviando...</h1> Aguardando resposta do servidor...");
     const formData = new FormData(event.target);
 
-    // formData.append("access_key", "15d9a11c-1005-49d3-907b-6424c6e494d3");
+    formData.append("access_key", "15d9a11c-1005-49d3-907b-6424c6e494d3");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -25,7 +25,7 @@ const ContatoComponente = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Sua mensagem foi enviada com sucesso!");
+      setResult("<h1>Sua mensagem foi enviada com sucesso!</h1>");
       event.target.reset();
     } else {
       console.log("Erro", data);
