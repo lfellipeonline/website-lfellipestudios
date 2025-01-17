@@ -50,6 +50,7 @@ p{
 
 .slider{
     overflow: hidden;
+    
 }
 
 .slider ul{
@@ -64,6 +65,7 @@ p{
     list-style: none;
     width: 40%;
     padding: 20px;
+    
 }
 
 .slide{

@@ -121,7 +121,7 @@ h3{
     transition: transform 0.1s, box-shadow 0.1s;
 }
 
-.portifolio-container{
+/* .portifolio-container{
     background-image: linear-gradient(
         transparent,
         rgb(0, 0, 0) 95%
@@ -132,19 +132,21 @@ h3{
         rgb(0, 0, 0) 95%
       ),
     url(./assets/aboutimage.jpg);
-}
+} */
 
 .contato-container{
     background-image: linear-gradient(
-        transparent,
+        transparent 50%,
         rgb(0, 0, 0) 95%
       ),
       linear-gradient(
           to top,
         transparent,
-        rgb(0, 0, 0) 95%
+        rgb(0, 0, 0) 100%
       ),
-    url(./assets/aboutimage.jpg);
+    url(./assets/footerimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Responsividade Mobile */
