@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import PortifolioPage from './pages/portifoliopage.jsx'
+import MateriaPage from './pages/materiapage.jsx'
 
 import {
   createBrowserRouter,
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "portifolio",
     element: <PortifolioPage />,
+  },
+  {
+    path: "materia",
+    element: <MateriaPage />,
   },
 ]);
 

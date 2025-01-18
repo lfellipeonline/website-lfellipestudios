@@ -1,0 +1,38 @@
+.header-text-wrapper p{
+    margin: auto 400px;
+    font-size: 15px;
+}
+.header-info{
+    display: flex;
+    margin: auto 400px;
+}
+.header-text-wrapper button{
+    margin: auto 400px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    display: flex;
+    
+    border-radius: 10px;
+}
+.header-text-wrapper button img{
+    width: 20px;
+}
+
+
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-wrapper img{
+    padding-top: 10px;
+    width: 35%;
+    max-width: 35%;
+    height: auto;
+}
+.wrapper-button{
+    display: flex;
+    align-items: flex-end;
+}

@@ -98,3 +98,7 @@ p{
 .more-button a{
     font-family: 'heading-now-86-bold'
 }
+
+.projectinfo{
+    cursor: pointer;
+}

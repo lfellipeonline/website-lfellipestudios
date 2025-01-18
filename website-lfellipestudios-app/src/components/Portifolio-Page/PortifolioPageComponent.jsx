@@ -1,8 +1,11 @@
 import React, { useRef } from 'react'
 import styles from './PortifolioPageComponent.module.css'
 import noicon from "../../assets/portifolionoimage.png";
+import { useNavigate } from 'react-router-dom'
 
 const PortifolioPageComponent = () => {
+
+  const navigate = useNavigate()
 
     const slider = useRef()
     let transformX = 0
@@ -31,7 +34,7 @@ const PortifolioPageComponent = () => {
           <ul ref={slider}>
             <li>
               <div className="slide">
-                <div className="projectinfo">
+                <div className="projectinfo" onClick={() => navigate('/materia')}>
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto</span>
@@ -42,7 +45,7 @@ const PortifolioPageComponent = () => {
             </li>
             <li>
               <div className="slide">
-                <div className="projectinfo">
+              <div className="projectinfo" onClick={() => navigate('/materia')}>
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto </span>
@@ -54,7 +57,7 @@ const PortifolioPageComponent = () => {
             </li>
             <li>
               <div className="slide">
-                <div className="projectinfo">
+              <div className="projectinfo" onClick={() => navigate('/materia')}>
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto</span>
@@ -66,7 +69,7 @@ const PortifolioPageComponent = () => {
             </li>
             <li>
               <div className="slide">
-                <div className="projectinfo">
+              <div className="projectinfo" onClick={() => navigate('/materia')}>
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto</span>
@@ -78,7 +81,7 @@ const PortifolioPageComponent = () => {
             </li>
             <li>
               <div className="slide">
-                <div className="projectinfo">
+              <div className="projectinfo" onClick={() => navigate('/materia')}>
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto</span>
@@ -90,7 +93,7 @@ const PortifolioPageComponent = () => {
             </li>
             <li>
               <div className="slide">
-                <div className="projectinfo">
+              <div className="projectinfo" onClick={() => navigate('/materia')}>
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
                        <span>Subtitulo do Projeto</span>
