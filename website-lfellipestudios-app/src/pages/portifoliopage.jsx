@@ -11,13 +11,21 @@ const PortifolioPage = () => {
   return (
     <div>
         <div className="container portifolio-page-container">
-        <div className="portifolio-alert"><span>Página em construção <br />Design subjetivo a mudanças</span></div>
+        <TituloDireitaComponente 
+        titulo="Portifólio" 
+        texto={
+        <>
+        Conheça meus projetos.<br />
+        <i>(Página em construção, design subjetivo a mudanças)</i>
+        </>
+        } 
+/>
         <HomebarPortifolioComponent />
         <TituloComponente titulo="Projetos Recentes" texto="Descubra meus projetos mais recentes." />
         <PortifolioPageComponent />
         <TituloComponente titulo="Projetos UNINASSAU" texto="Meus Projetos da UNINASSAU." />
         <PortifolioPageComponent />
-        <TituloComponente titulo="Design Gráfico" texto="Projetos que envolvem Design Gráfico e Fotografia." />
+        <TituloComponente titulo="Design Gráfico" texto="Projetos de Design Gráfico e Fotografia." />
         <PortifolioPageComponent />
         </div>
         <div className="container">

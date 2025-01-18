@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import './PortifolioPageComponent.module.css'
+import styles from './PortifolioPageComponent.module.css'
 import noicon from "../../assets/portifolionoimage.png";
 
 const PortifolioPageComponent = () => {
@@ -24,8 +24,8 @@ const PortifolioPageComponent = () => {
   return (
     <div className="portifolio">
 
-        <button className='back-button' onClick={slideBackward}>◄</button>
-        <button className='forward-button' onClick={slideForward}>►</button>
+        <button className={styles.backButton} onClick={slideBackward}>◄</button>
+        <button className={styles.forwardButton} onClick={slideForward}>►</button>
         
         <div className="slider">
           <ul ref={slider}>
@@ -34,10 +34,10 @@ const PortifolioPageComponent = () => {
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
-                       <span>Subtitulo do Projeto</span> 
+                       <span>Subtitulo do Projeto</span>
+                       <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
               </div>
             </li>
             <li>
@@ -45,10 +45,11 @@ const PortifolioPageComponent = () => {
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
-                       <span>Subtitulo do Projeto </span> 
+                       <span>Subtitulo do Projeto </span>
+                       <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
+                
               </div>
             </li>
             <li>
@@ -56,10 +57,11 @@ const PortifolioPageComponent = () => {
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
-                       <span>Subtitulo do Projeto</span> 
+                       <span>Subtitulo do Projeto</span>
+                       <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
+                
               </div>
             </li>
             <li>
@@ -67,10 +69,11 @@ const PortifolioPageComponent = () => {
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
-                       <span>Subtitulo do Projeto</span> 
+                       <span>Subtitulo do Projeto</span>
+                       <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p> 
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
+                
               </div>
             </li>
             <li>
@@ -78,10 +81,11 @@ const PortifolioPageComponent = () => {
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
-                       <span>Subtitulo do Projeto</span> 
+                       <span>Subtitulo do Projeto</span>
+                       <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p> 
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
+                
               </div>
             </li>
             <li>
@@ -89,10 +93,10 @@ const PortifolioPageComponent = () => {
                 <div className="projectinfo">
                   <img src={noicon} alt="noicon" />
                   <div><h3>Titulo Limite do Projeto</h3>
-                       <span>Subtitulo do Projeto</span> 
+                       <span>Subtitulo do Projeto</span>
+                       <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
                   </div>
                 </div>
-                <p>Descrição Detalhada do Projeto. Lorem Ipsum sit amet, consectetur adipiscing elit.</p>
               </div>
             </li>
           </ul>

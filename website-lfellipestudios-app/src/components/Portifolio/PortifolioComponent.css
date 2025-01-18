@@ -15,7 +15,7 @@ p{
 
 .forward-button, .back-button{
     position: absolute;
-    top: 30%;
+    top: 36%;
     color: rgb(0, 0, 0);
     right: 0;
     transform: translateY(-60%);
@@ -50,12 +50,11 @@ p{
 
 .slider{
     overflow: hidden;
-    
 }
 
 .slider ul{
     display: flex;
-    width: 200%;
+    width: 150%;
     overflow-x: hidden;
     transition: 0.5s;
     transform: translateX(0);
