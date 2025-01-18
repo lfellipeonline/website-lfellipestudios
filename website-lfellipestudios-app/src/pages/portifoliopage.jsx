@@ -15,17 +15,18 @@ const PortifolioPage = () => {
         titulo="Portifólio" 
         texto={
         <>
-        Conheça meus projetos.<br /> <br />
-        <i>(Página em construção, design subjetivo a mudanças)</i>
+        Descubra meus projetos.
         </>
         } 
 />
         <HomebarPortifolioComponent />
-        <TituloDireitaComponente titulo="Projetos Recentes" texto="Descubra meus projetos mais recentes." />
+        <TituloDireitaComponente titulo="Projetos Recentes" texto="Meus projetos mais recentes." />
         <PortifolioPageComponent />
         <TituloDireitaComponente titulo="Projetos UNINASSAU" texto="Meus Projetos da UNINASSAU." />
         <PortifolioPageComponent />
         <TituloDireitaComponente titulo="Design Gráfico" texto="Projetos de Design Gráfico e Fotografia." />
+        <PortifolioPageComponent />
+        <TituloDireitaComponente titulo="Edição de Vídeos" texto="Projetos de Edição de Vídeo e Filmagem" />
         <PortifolioPageComponent />
         </div>
         <div className="container">
