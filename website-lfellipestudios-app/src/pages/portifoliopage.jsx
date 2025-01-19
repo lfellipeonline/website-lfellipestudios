@@ -6,11 +6,16 @@ import TituloComponente from '../components/Titulos/TituloComponente'
 import './PortifolioPage.css'
 import FooterComponente from '../components/Footer/FooterComponente'
 import HomebarPortifolioComponent from '../components/Portifolio/Homebar Portifolio/HomebarPortifolioComponent'
+import StarsBackgroundVideo from '../assets/starsvideobackground.mp4'
 
 const PortifolioPage = () => {
   return (
     <div>
+        <div className="background-video">
+        <video src={StarsBackgroundVideo} autoPlay loop muted></video>
+        </div>
         <div className="container portifolio-page-container">
+        
         <TituloComponente 
         titulo="Portifólio" 
         texto={

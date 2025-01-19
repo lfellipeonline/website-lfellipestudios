@@ -4,6 +4,7 @@
 
 p{
     font-size: 15px;
+    
 }
 
 .portifolio{
@@ -88,7 +89,7 @@ p{
 }
 
 .slide{
-    padding: 30px
+    padding: 30px;
 }
 .slide img{
     border-radius: 15px;
