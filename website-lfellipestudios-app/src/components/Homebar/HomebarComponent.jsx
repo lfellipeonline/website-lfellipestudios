@@ -18,7 +18,7 @@ const HomebarComponent = () => {
 
   return (
     <nav className={`container ${sticky ? 'homebar-shadow' : ''}`}>
-        <img src={logo} alt="lfellipestudios logo" className='logo' />
+      <a href="/"><img src={logo} alt="lfellipestudios logo" className='logo' /></a>
         <ul className='nav-list'>
             <li><button className='default-small-button'><Link to= "start" smooth={true} offset={0} duration={500}>Início</Link></button></li>
             <li><button className='default-small-button'><Link to= "sobre" smooth={true} offset={-90} duration={500}>Sobre</Link></button></li>

@@ -18,7 +18,7 @@ const HomebarPortifolioComponent = () => {
 
   return (
     <nav className={`container ${sticky ? 'homebar-shadow' : ''}`}>
-        <img src={logo} alt="lfellipestudios logo" className='logo' />
+        <a href="/"><img src={logo} alt="lfellipestudios logo" className='logo' /></a>
         <ul className='nav-list'>
             <li><button className='default-small-button'><a href="/">Voltar Ao Início</a></button></li>
             <button className='default-small-button svg-button'><HomebarSVG /></button>
