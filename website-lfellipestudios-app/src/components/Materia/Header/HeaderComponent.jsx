@@ -4,7 +4,7 @@ import TituloComponente from '../../Titulos/TituloComponente';
 import TitleImage from '../../../assets/portifolionoimage.png';
 import ShareIcon from '../../../assets/shareicon.png';
 
-const HeaderComponent = () => {
+const HeaderComponent = ({ titulo, subtitulo, autor, dataPublicacao, preTexto, imagemTitulo }) => {
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState(false);
 
@@ -13,7 +13,7 @@ const HeaderComponent = () => {
     navigator.clipboard.writeText(currentUrl)
       .then(() => {
         setCopied(true);
-        setError(false)
+        setError(false);
       })
       .catch(() => {
         setError(true);
@@ -24,11 +24,11 @@ const HeaderComponent = () => {
   return (
     <div className="header container">
       <div className="header-text-wrapper">
-        <TituloComponente titulo="Titulo da Matéria" texto="Subtítulo da Matéria" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <TituloComponente titulo={titulo} texto={subtitulo} />
+        <p>{preTexto}</p>
         <span className="header-info">
-          Por: lfellipeonline <br />
-          Publicado em: 18/01/2025
+          Por: {autor} <br />
+          Publicado em: {dataPublicacao}
         </span>
         <div className="wrapper-button">
           <button className='default-white-button' onClick={handleShareClick}>
@@ -39,7 +39,7 @@ const HeaderComponent = () => {
         </div>
       </div>
       <div className="header-wrapper">
-        <img src={TitleImage} alt="Imagem de Título" />
+        <img src={imagemTitulo || TitleImage} alt="Imagem de Título" />
       </div>
     </div>
   );
