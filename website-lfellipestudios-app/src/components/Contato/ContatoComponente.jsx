@@ -5,6 +5,7 @@ import instagramimage from "../../assets/instagramicon.png";
 import linkedinimage from "../../assets/linkedinicon.png";
 import gmailimage from "../../assets/gmailicon.png";
 import loading from "../../assets/loadingicon.gif";
+import carrdcoicon from "../../assets/carrdcoicon.png";
 
 const ContatoComponente = () => {
   const onChange = () => {}
@@ -47,6 +48,7 @@ const ContatoComponente = () => {
                 <li><img src={gmailimage} alt="gmailimage" /><a href="https://criarmeulink.com.br/u/1736439014">mail.lfellipe@gmail.com</a></li>
                 <li><img src={instagramimage} alt="instagramimage" /><a href="https://www.instagram.com/lfellipestudio/">@lfellipestudio</a></li>
                 <li><img src={linkedinimage} alt="linkedinimage" /><a href="https://www.linkedin.com/in/lfellipeonline">linkedin.com/in/lfellipeonline</a></li>
+                <li><img src={carrdcoicon} alt="carrdcoicon" /><a href="https://lfellipestudios.carrd.co/">lfellipestudios.carrd.co</a></li>
             </ul>
         </div>
         <div className="contato-coluna">
