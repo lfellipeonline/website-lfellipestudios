@@ -8,7 +8,6 @@ import loading from "../../assets/loadingicon.gif";
 import carrdcoicon from "../../assets/carrdcoicon.png";
 
 const ContatoComponente = () => {
-  const onChange = () => {}
   
     const [result, setResult] = React.useState("");
 
@@ -56,8 +55,8 @@ const ContatoComponente = () => {
                 <label>Nome</label>
                 <input type="text" name='name' placeholder='Digite seu nome'
                 required/>
-                <label>Telefone</label>
-                <input type="tel" name='phone' placeholder='Digite seu telefone'
+                <label>E-mail</label>
+                <input type='email' name='email' placeholder='Digite seu email'
                 required/>
                 <label>Mensagem (Opcional)</label>
                 <textarea name="message" rows="6" placeholder='Escreva sua mensagem'></textarea>
