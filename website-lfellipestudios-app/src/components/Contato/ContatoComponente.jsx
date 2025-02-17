@@ -56,7 +56,7 @@ const ContatoComponente = () => {
                 <input type="text" name='name' placeholder='Digite seu nome'
                 required/>
                 <label>E-mail</label>
-                <input type='email' name='email' placeholder='Digite seu email'
+                <input type='email' name='email' placeholder='Digite seu e-mail'
                 required/>
                 <label>Mensagem (Opcional)</label>
                 <textarea name="message" rows="6" placeholder='Escreva sua mensagem'></textarea>
