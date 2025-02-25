@@ -1,0 +1,106 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titleauth h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .auth-button {
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4433600;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Escurece o fundo */
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+  }
+  
+  input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid;
+    color: black;
+  }
+  
+  .login-button {
+    padding: 10px 20px; /* Padding específico para Logar */
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: #45a049;
+  }
+  
+  .close-button {
+    padding: 10px 20px; /* Padding específico para Fechar */
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .close-button:hover {
+    background-color: #df3d32;
+  }
+  
+  .error-message {
+    color: #f44336; /* Cor vermelha para erro */
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .error-message.communication-error {
+    color: #ff9800;
+    display: flex;
+    justify-content: center;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
