@@ -1,36 +1,62 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './JwtComponent.css';
 
 const AuthModal = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [token, setToken] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleTokenChange = (e) => {
-    setToken(e.target.value);
-    setError(''); // Limpa o erro quando o usuário começa a digitar
+  // Add form ref
+  const formRef = React.useRef(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!isOpen) return;
+
+      if (e.key === 'Escape') {
+        handleClose();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen]);
+
+  // Add form submit handler
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission
+    handleAuthenticate();
+  };
+
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+    setError('');
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+    setError('');
   };
 
   const handleAuthenticate = () => {
-    if (token) {
-      // Envia o token para o back-end para validação
-      fetch('http://localhost:5000/api/authenticate', {  // URL do back-end
+    if (username && password) {
+      fetch('http://localhost:5000/api/authenticate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ token }),  // Envia o token como payload
+        body: JSON.stringify({ username, password }),
       })
         .then(response => response.json())
         .then(data => {
           if (data.success) {
-            // Se o back-end responder que o token é válido, armazene o JWT
-            localStorage.setItem('authToken', data.token);  // Armazena o JWT no localStorage
-            console.log('Token autenticado com sucesso!');
-            setIsOpen(false); // Fecha o modal após autenticação
+            localStorage.setItem('authToken', data.token);
+            console.log('Autenticado com sucesso!');
+            setIsOpen(false);
           } else {
-            setError('Token de autenticação inválido');
+            setError('Usuário ou senha inválidos');
           }
         })
         .catch(error => {
@@ -38,14 +64,15 @@ const AuthModal = () => {
           setError('Erro de comunicação com o servidor');
         });
     } else {
-      setError('Por favor, insira um token de autenticação');
+      setError('Por favor, preencha todos os campos');
     }
   };
 
   const handleClose = () => {
     setIsOpen(false);
-    setError(''); // Limpa o erro ao fechar o modal
-    setToken(''); // Limpa o valor do input ao fechar o modal
+    setError('');
+    setUsername('');
+    setPassword('');
   };
 
   return (
@@ -69,23 +96,31 @@ const AuthModal = () => {
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="titleauth">
-              <h1>Autenticação</h1>
-              <span>A autenticação requer acesso autorizado</span>
-            </div>
-            <input
-              type="text"
-              placeholder="Digite seu token"
-              value={token}
-              onChange={handleTokenChange}
-            />
-            {error && (
-              <span className={`error-message ${error.includes('comunicação') ? 'communication-error' : ''}`}>
-                {error}
-              </span>
-            )}
-            <button className="login-button" onClick={handleAuthenticate}>Logar</button>
-            <button className="close-button" onClick={handleClose}>Fechar</button>
+            <form ref={formRef} onSubmit={handleSubmit}>
+              <div className="titleauth">
+                <h1>Autenticação</h1>
+                <span>A autenticação requer acesso autorizado</span>
+              </div>
+              <input
+                type="text"
+                placeholder="Usuário"
+                value={username}
+                onChange={handleUsernameChange}
+              />
+              <input
+                type="password"
+                placeholder="Senha"
+                value={password}
+                onChange={handlePasswordChange}
+              />
+              {error && (
+                <span className={`error-message ${error.includes('comunicação') ? 'communication-error' : ''}`}>
+                  {error}
+                </span>
+              )}
+              <button type="submit" className="login-button">Entrar</button>
+              <button type="button" className="close-button" onClick={handleClose}>Fechar</button>
+            </form>
           </motion.div>
         </motion.div>
       )}

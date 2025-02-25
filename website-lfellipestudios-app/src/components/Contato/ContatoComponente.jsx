@@ -4,7 +4,6 @@ import contatoimage from "../../assets/contatoimage.png";
 import instagramimage from "../../assets/instagramicon.png";
 import linkedinimage from "../../assets/linkedinicon.png";
 import gmailimage from "../../assets/gmailicon.png";
-import loading from "../../assets/loadingicon.gif";
 import carrdcoicon from "../../assets/carrdcoicon.png";
 
 const ContatoComponente = () => {
