@@ -103,4 +103,14 @@
   button:focus {
     outline: none;
   }
+
+  .logout-button {
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4433600;
+  }
+
   

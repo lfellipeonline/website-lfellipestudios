@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useAuth } from '../../context/AuthContext.jsx';
 import './JwtComponent.css';
 
 const AuthModal = () => {
@@ -7,64 +8,61 @@ const AuthModal = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const { isAuthenticated, setIsAuthenticated, logout } = useAuth(); // Corrigido aqui
 
-  // Add form ref
   const formRef = React.useRef(null);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (!isOpen) return;
-
-      if (e.key === 'Escape') {
-        handleClose();
-      }
+      if (e.key === 'Escape') handleClose();
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen]);
 
-  // Add form submit handler
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
     handleAuthenticate();
   };
 
-  const handleUsernameChange = (e) => {
-    setUsername(e.target.value);
+  const handleAuthenticate = async () => {
+    if (!username.trim() || !password.trim()) {
+      setError('Por favor, preencha todos os campos');
+      return;
+    }
+  
+    setIsLoading(true);
     setError('');
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-    setError('');
-  };
-
-  const handleAuthenticate = () => {
-    if (username && password) {
-      fetch('http://localhost:5000/api/authenticate', {
+  
+    try {
+      const response = await fetch('http://localhost:5000/api/authenticate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ username, password }),
-      })
-        .then(response => response.json())
-        .then(data => {
-          if (data.success) {
-            localStorage.setItem('authToken', data.token);
-            console.log('Autenticado com sucesso!');
-            setIsOpen(false);
-          } else {
-            setError('Usuário ou senha inválidos');
-          }
-        })
-        .catch(error => {
-          console.error('Erro ao autenticar:', error);
-          setError('Erro de comunicação com o servidor');
-        });
-    } else {
-      setError('Por favor, preencha todos os campos');
+      });
+  
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.message || 'Credenciais inválidas');
+      }
+  
+      localStorage.setItem('authToken', data.token);
+      setIsAuthenticated(true);
+      setIsOpen(false);
+      
+    } catch (error) {
+      console.error('Erro ao autenticar:', error);
+      setError(error.message.includes('Failed to fetch') 
+        ? 'Erro de conexão com o servidor' 
+        : error.message);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -77,9 +75,23 @@ const AuthModal = () => {
 
   return (
     <div className="auth-container">
-      <button className="auth-button" onClick={() => setIsOpen(true)}>
-        <span>Autenticar</span>
-      </button>
+      {!isAuthenticated ? (
+        <button 
+          className="auth-button" 
+          onClick={() => setIsOpen(true)}
+          aria-label="Abrir modal de autenticação"
+        >
+          <span>Autenticar</span>
+        </button>
+      ) : (
+        <button 
+          className="logout-button" 
+          onClick={logout}
+          aria-label="Fazer logout"
+        >
+          <span>Sair</span>
+        </button>
+      )}
 
       {isOpen && (
         <motion.div
@@ -105,21 +117,35 @@ const AuthModal = () => {
                 type="text"
                 placeholder="Usuário"
                 value={username}
-                onChange={handleUsernameChange}
+                onChange={(e) => setUsername(e.target.value)}
+                autoComplete="username"
               />
               <input
                 type="password"
                 placeholder="Senha"
                 value={password}
-                onChange={handlePasswordChange}
+                onChange={(e) => setPassword(e.target.value)}
+                autoComplete="current-password"
               />
               {error && (
-                <span className={`error-message ${error.includes('comunicação') ? 'communication-error' : ''}`}>
+                <span className={`error-message ${error.includes('conexão') ? 'communication-error' : ''}`}>
                   {error}
                 </span>
               )}
-              <button type="submit" className="login-button">Entrar</button>
-              <button type="button" className="close-button" onClick={handleClose}>Fechar</button>
+              <button 
+                type="submit" 
+                className="login-button" 
+                disabled={isLoading}
+              >
+                {isLoading ? 'Autenticando...' : 'Entrar'}
+              </button>
+              <button 
+                type="button" 
+                className="close-button" 
+                onClick={handleClose}
+              >
+                Fechar
+              </button>
             </form>
           </motion.div>
         </motion.div>
