@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
         isAuthenticated, 
         setIsAuthenticated,
         validateToken,
-        logout // Adicione a função logout aqui
+        logout
       }}
     >
       {children}

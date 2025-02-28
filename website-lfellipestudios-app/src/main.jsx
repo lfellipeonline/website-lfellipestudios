@@ -1,32 +1,34 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import PortifolioPage from './pages/portifoliopage.jsx'
-import MateriaPage from './pages/materiapage.jsx'
-
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import App from './App.jsx';
+import PortifolioPage from './pages/portifoliopage.jsx';
+import MateriaPage from './pages/materiapage.jsx';
+import { AuthProvider } from './Context/AuthContext.jsx'; // Importe o AuthProvider
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
   },
   {
-    path: "portifolio",
+    path: 'portifolio',
     element: <PortifolioPage />,
   },
   {
-    path: "materia",
+    path: 'materia',
     element: <MateriaPage />,
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
-)
+);

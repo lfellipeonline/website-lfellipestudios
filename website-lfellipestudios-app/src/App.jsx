@@ -1,5 +1,5 @@
 import React from 'react'
-import { AuthProvider } from './context/AuthContext' // Importe o AuthProvider
+import { AuthProvider } from './Context/AuthContext'
 import HomebarComponent from './components/Homebar/HomebarComponent'
 import StartComponent from './components/Start/StartComponent'
 import SobreComponent from './components/Sobre/SobreComponent'
