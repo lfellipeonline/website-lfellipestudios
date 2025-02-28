@@ -92,7 +92,7 @@ const PortifolioComponent = () => {
             </li>
           </ul>
           </div>
-          <button className='default-white-button more-button'><a href="/portifolio">Ver Mais</a></button>
+          <button className='default-white-button more-button'><a href="/portifolio">Explorar Conteúdo</a></button>
     </div>
   )
 }
