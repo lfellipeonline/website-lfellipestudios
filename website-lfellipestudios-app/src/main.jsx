@@ -4,7 +4,7 @@ import './index.css';
 import App from './App.jsx';
 import PortifolioPage from './pages/portifoliopage.jsx';
 import MateriaPage from './pages/materiapage.jsx';
-import { AuthProvider } from './Context/AuthContext.jsx'; // Importe o AuthProvider
+import { AuthProvider } from './context/AuthContext.jsx';
 import {
   createBrowserRouter,
   RouterProvider,
