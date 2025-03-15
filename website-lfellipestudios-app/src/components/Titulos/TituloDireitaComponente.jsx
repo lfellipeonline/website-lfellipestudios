@@ -4,7 +4,7 @@ import styles from './TituloDireitaComponente.module.css';
 function TituloDireitaComponente(props) {
   return (
     <div className={styles.tituloBase}>
-      <h1>{props.titulo}</h1>
+      <h2>{props.titulo}</h2>
       <span>{props.texto}</span>
     </div>
   );
